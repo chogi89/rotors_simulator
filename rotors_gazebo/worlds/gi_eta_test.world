@@ -1,0 +1,945 @@
+<sdf version='1.6'>
+  <world name='default'>
+    <light name='sun9' type='spotlight'>
+      <cast_shadows>1</cast_shadows>
+      <pose frame=''>-5 -5 3 0 -0 0</pose>
+      <diffuse>0.1 0.1 0.1 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <attenuation>
+        <range>20</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0 0 -1</direction>
+    </light>
+    <light name='sun10' type='spotlight'>
+      <cast_shadows>1</cast_shadows>
+      <pose frame=''>-5 -5 3 0 -0 0</pose>
+      <diffuse>0.1 0.1 0.1 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <attenuation>
+        <range>20</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0 0 -1</direction>
+    </light>
+    <light name='sun11' type='spotlight'>
+      <cast_shadows>1</cast_shadows>
+      <pose frame=''>-5 -5 3 0 -0 0</pose>
+      <diffuse>0.1 0.1 0.1 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <attenuation>
+        <range>20</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0 0 -1</direction>
+    </light>
+    <light name='sun12' type='spotlight'>
+      <cast_shadows>1</cast_shadows>
+      <pose frame=''>-5 -5 3 0 -0 0</pose>
+      <diffuse>0.1 0.1 0.1 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <attenuation>
+        <range>20</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0 0 -1</direction>
+    </light>
+    <light name='sun13' type='spotlight'>
+      <cast_shadows>1</cast_shadows>
+      <pose frame=''>-5 -5 3 0 -0 0</pose>
+      <diffuse>0.1 0.1 0.1 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <attenuation>
+        <range>20</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0 0 -1</direction>
+    </light>
+    <light name='sun14' type='spotlight'>
+      <cast_shadows>1</cast_shadows>
+      <pose frame=''>-5 -5 3 0 -0 0</pose>
+      <diffuse>0.1 0.1 0.1 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <attenuation>
+        <range>20</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0 0 -1</direction>
+    </light>
+    <light name='sun15' type='spotlight'>
+      <cast_shadows>1</cast_shadows>
+      <pose frame=''>-5 -5 3 0 -0 0</pose>
+      <diffuse>0.1 0.1 0.1 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <attenuation>
+        <range>20</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0 0 -1</direction>
+    </light>
+    <light name='sun16' type='spotlight'>
+      <cast_shadows>1</cast_shadows>
+      <pose frame=''>-5 -5 3 0 -0 0</pose>
+      <diffuse>0.1 0.1 0.1 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <attenuation>
+        <range>20</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0 0 -1</direction>
+    </light>
+    <light name='sun17' type='spotlight'>
+      <cast_shadows>1</cast_shadows>
+      <pose frame=''>0 0 3 0 -0 0</pose>
+      <diffuse>0.1 0.1 0.1 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <attenuation>
+        <range>10</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0 0 -1</direction>
+    </light>
+    <light name='sun18' type='spotlight'>
+      <cast_shadows>1</cast_shadows>
+      <pose frame=''>0 0 3 0 -0 0</pose>
+      <diffuse>0.1 0.1 0.1 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <attenuation>
+        <range>10</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0 0 -1</direction>
+    </light>
+    <light name='sun19' type='spotlight'>
+      <cast_shadows>1</cast_shadows>
+      <pose frame=''>0 0 3 0 -0 0</pose>
+      <diffuse>0.1 0.1 0.1 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <attenuation>
+        <range>10</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0 0 -1</direction>
+    </light>
+    <light name='sun20' type='spotlight'>
+      <cast_shadows>1</cast_shadows>
+      <pose frame=''>0 0 3 0 -0 0</pose>
+      <diffuse>0.1 0.1 0.1 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <attenuation>
+        <range>10</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0 0 -1</direction>
+    </light>
+    <light name='sun21' type='spotlight'>
+      <cast_shadows>1</cast_shadows>
+      <pose frame=''>0 0 3 0 -0 0</pose>
+      <diffuse>0.1 0.1 0.1 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <attenuation>
+        <range>10</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0 0 -1</direction>
+    </light>
+    <light name='sun22' type='spotlight'>
+      <cast_shadows>1</cast_shadows>
+      <pose frame=''>0 0 3 0 -0 0</pose>
+      <diffuse>0.1 0.1 0.1 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <attenuation>
+        <range>10</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0 0 -1</direction>
+    </light>
+    <light name='sun23' type='spotlight'>
+      <cast_shadows>1</cast_shadows>
+      <pose frame=''>0 0 3 0 -0 0</pose>
+      <diffuse>0.1 0.1 0.1 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <attenuation>
+        <range>10</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0 0 -1</direction>
+    </light>
+    <light name='sun24' type='spotlight'>
+      <cast_shadows>1</cast_shadows>
+      <pose frame=''>0 0 3 0 -0 0</pose>
+      <diffuse>0.1 0.1 0.1 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <attenuation>
+        <range>10</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0 0 -1</direction>
+    </light>
+    <light name='sun25' type='spotlight'>
+      <cast_shadows>1</cast_shadows>
+      <pose frame=''>0 0 3 0 -0 0</pose>
+      <diffuse>0.1 0.1 0.1 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <attenuation>
+        <range>10</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0 0 -1</direction>
+    </light>
+    <light name='sun26' type='spotlight'>
+      <cast_shadows>1</cast_shadows>
+      <pose frame=''>0 0 3 0 -0 0</pose>
+      <diffuse>0.1 0.1 0.1 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <attenuation>
+        <range>10</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0 0 -1</direction>
+    </light>
+    <light name='sun27' type='spotlight'>
+      <cast_shadows>1</cast_shadows>
+      <pose frame=''>0 0 3 0 -0 0</pose>
+      <diffuse>0.1 0.1 0.1 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <attenuation>
+        <range>10</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0 0 -1</direction>
+    </light>
+    <light name='sun28' type='spotlight'>
+      <cast_shadows>1</cast_shadows>
+      <pose frame=''>0 0 3 0 -0 0</pose>
+      <diffuse>0.1 0.1 0.1 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <attenuation>
+        <range>10</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0 0 -1</direction>
+    </light>
+    <light name='sun29' type='spotlight'>
+      <cast_shadows>1</cast_shadows>
+      <pose frame=''>0 0 3 0 -0 0</pose>
+      <diffuse>0.1 0.1 0.1 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <attenuation>
+        <range>10</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0 0 -1</direction>
+    </light>
+    <light name='sun30' type='spotlight'>
+      <cast_shadows>1</cast_shadows>
+      <pose frame=''>0 0 3 0 -0 0</pose>
+      <diffuse>0.1 0.1 0.1 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <attenuation>
+        <range>10</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0 0 -1</direction>
+    </light>
+    <light name='sun31' type='spotlight'>
+      <cast_shadows>1</cast_shadows>
+      <pose frame=''>0 0 3 0 -0 0</pose>
+      <diffuse>0.1 0.1 0.1 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <attenuation>
+        <range>10</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0 0 -1</direction>
+    </light>
+    <light name='sun32' type='spotlight'>
+      <cast_shadows>1</cast_shadows>
+      <pose frame=''>0 0 3 0 -0 0</pose>
+      <diffuse>0.1 0.1 0.1 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <attenuation>
+        <range>10</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0 0 -1</direction>
+    </light>
+    <light name='sun33' type='spotlight'>
+      <cast_shadows>1</cast_shadows>
+      <pose frame=''>0 0 3 0 -0 0</pose>
+      <diffuse>0.1 0.1 0.1 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <attenuation>
+        <range>10</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0 0 -1</direction>
+    </light>
+    <light name='sun34' type='spotlight'>
+      <cast_shadows>1</cast_shadows>
+      <pose frame=''>0 0 3 0 -0 0</pose>
+      <diffuse>0.1 0.1 0.1 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <attenuation>
+        <range>10</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0 0 -1</direction>
+    </light>
+    <light name='sun35' type='spotlight'>
+      <cast_shadows>1</cast_shadows>
+      <pose frame=''>0 0 3 0 -0 0</pose>
+      <diffuse>0.1 0.1 0.1 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <attenuation>
+        <range>10</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0 0 -1</direction>
+    </light>
+    <light name='sun36' type='spotlight'>
+      <cast_shadows>1</cast_shadows>
+      <pose frame=''>0 0 3 0 -0 0</pose>
+      <diffuse>0.1 0.1 0.1 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <attenuation>
+        <range>10</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0 0 -1</direction>
+    </light>
+
+    <plugin name='ros_interface_plugin' filename='librotors_gazebo_ros_interface_plugin.so'/>
+
+    <physics name='default_physics' default='0' type='ode'>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>1000</iters>
+          <sor>1.3</sor>
+          <use_dynamic_moi_rescaling>0</use_dynamic_moi_rescaling>
+        </solver>
+        <constraints>
+          <cfm>0</cfm>
+          <erp>0.2</erp>
+          <contact_max_correcting_vel>100</contact_max_correcting_vel>
+          <contact_surface_layer>0.001</contact_surface_layer>
+        </constraints>
+      </ode>
+      <max_step_size>0.01</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>100</real_time_update_rate>
+    </physics>
+    <scene>
+      <ambient>0.4 0.4 0.4 1</ambient>
+      <background>0.7 0.7 0.7 1</background>
+      <shadows>1</shadows>
+    </scene>
+    <spherical_coordinates>
+      <surface_model>EARTH_WGS84</surface_model>
+      <latitude_deg>0</latitude_deg>
+      <longitude_deg>0</longitude_deg>
+      <elevation>0</elevation>
+      <heading_deg>0</heading_deg>
+    </spherical_coordinates>
+    <model name='ground_plane'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Grey</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+    </model>
+    <state world_name='default'>
+      <sim_time>8649 630000000</sim_time>
+      <real_time>245 844471534</real_time>
+      <wall_time>1516545608 476663375</wall_time>
+      <iterations>24562</iterations>
+      <model name='asphalt_plane'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='brick_box_3x1x3'>
+        <pose frame=''>5 0 0 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name='chassis'>
+          <pose frame=''>5 0 1.5 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='brick_box_3x1x3_0'>
+        <pose frame=''>5 3 0 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name='chassis'>
+          <pose frame=''>5 3 1.5 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='brick_box_3x1x3_1'>
+        <pose frame=''>5 -3 0 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name='chassis'>
+          <pose frame=''>5 -3 1.5 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='brick_box_3x1x3_2'>
+        <pose frame=''>5 3 3 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name='chassis'>
+          <pose frame=''>5 3 4.5 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='brick_box_3x1x3_3'>
+        <pose frame=''>5 0 3 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name='chassis'>
+          <pose frame=''>5 0 4.5 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='brick_box_3x1x3_4'>
+        <pose frame=''>5 -3 3 0 -0 1.5708</pose>
+        <scale>1 1 1</scale>
+        <link name='chassis'>
+          <pose frame=''>5 -3 4.5 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='ground_plane'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <light name='sun10'>
+        <pose frame=''>3.5 -4.5 3 0 -0 0</pose>
+      </light>
+      <light name='sun11'>
+        <pose frame=''>-3.5 -4.5 3 0 -0 0</pose>
+      </light>
+      <light name='sun12'>
+        <pose frame=''>-5.5 -2.5 3 0 -0 0</pose>
+      </light>
+      <light name='sun13'>
+        <pose frame=''>-5.5 2.5 3 0 -0 0</pose>
+      </light>
+      <light name='sun14'>
+        <pose frame=''>-3.5 4.5 3 0 -0 0</pose>
+      </light>
+      <light name='sun15'>
+        <pose frame=''>3.5 4.5 3 0 -0 0</pose>
+      </light>
+      <light name='sun16'>
+        <pose frame=''>5.5 2.5 3 0 -0 0</pose>
+      </light>
+      <light name='sun17'>
+        <pose frame=''>9.5 0 3 0 -0 0</pose>
+      </light>
+      <light name='sun18'>
+        <pose frame=''>9.5 2.5 3 0 -0 0</pose>
+      </light>
+      <light name='sun19'>
+        <pose frame=''>9.5 -2.5 3 0 -0 0</pose>
+      </light>
+      <light name='sun20'>
+        <pose frame=''>9.5 4.5 3 0 -0 0</pose>
+      </light>
+      <light name='sun21'>
+        <pose frame=''>9.5 -4.5 3 0 -0 0</pose>
+      </light>
+      <light name='sun22'>
+        <pose frame=''>-9.5 0 3 0 -0 0</pose>
+      </light>
+      <light name='sun23'>
+        <pose frame=''>-9.5 2.5 3 0 -0 0</pose>
+      </light>
+      <light name='sun24'>
+        <pose frame=''>-9.5 -2.5 3 0 -0 0</pose>
+      </light>
+      <light name='sun25'>
+        <pose frame=''>-9.5 4.5 3 0 -0 0</pose>
+      </light>
+      <light name='sun26'>
+        <pose frame=''>-9.5 -4.5 3 0 -0 0</pose>
+      </light>
+      <light name='sun27'>
+        <pose frame=''>0 8.5 3 0 -0 0</pose>
+      </light>
+      <light name='sun28'>
+        <pose frame=''>3.5 8.5 3 0 -0 0</pose>
+      </light>
+      <light name='sun29'>
+        <pose frame=''>-3.5 8.5 3 0 -0 0</pose>
+      </light>
+      <light name='sun30'>
+        <pose frame=''>5.5 8.5 3 0 -0 0</pose>
+      </light>
+      <light name='sun31'>
+        <pose frame=''>-5.5 8.5 3 0 -0 0</pose>
+      </light>
+      <light name='sun32'>
+        <pose frame=''>0 -8.5 3 0 -0 0</pose>
+      </light>
+      <light name='sun33'>
+        <pose frame=''>3.5 -8.5 3 0 -0 0</pose>
+      </light>
+      <light name='sun34'>
+        <pose frame=''>-3.5 -8.5 3 0 -0 0</pose>
+      </light>
+      <light name='sun35'>
+        <pose frame=''>5.5 -8.5 3 0 -0 0</pose>
+      </light>
+      <light name='sun36'>
+        <pose frame=''>-5.5 -8.5 3 0 -0 0</pose>
+      </light>
+      <light name='sun9'>
+        <pose frame=''>5.5 -2.5 3 0 -0 0</pose>
+      </light>
+    </state>
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose frame=''>-16.4298 1.72714 17.8132 0 0.685796 -0.140633</pose>
+        <view_controller>orbit</view_controller>
+        <projection_type>perspective</projection_type>
+      </camera>
+    </gui>
+    <model name='asphalt_plane'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>20 20 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <box>
+              <size>20 20 0.1</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://asphalt_plane/materials/scripts</uri>
+              <uri>model://asphalt_plane/materials/textures</uri>
+              <name>vrc/asphalt</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>0 0 0 0 -0 0</pose>
+    </model>
+    <gravity>0 0 -9.8</gravity>
+    <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
+    <atmosphere type='adiabatic'/>
+    <model name='brick_box_3x1x3'>
+      <static>1</static>
+      <link name='chassis'>
+        <pose frame=''>0 0 1.5 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>3 1 3</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://brick_box_3x1x3/meshes/simple_box.dae</uri>
+              <scale>3 1 3</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://brick_box_3x1x3/materials/scripts</uri>
+              <uri>model://brick_box_3x1x3/materials/textures</uri>
+              <name>BrickBox/Diffuse</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+      </link>
+      <pose frame=''>4.71774 6.35111 0 0 -0 0</pose>
+    </model>
+    <model name='brick_box_3x1x3_0'>
+      <static>1</static>
+      <link name='chassis'>
+        <pose frame=''>0 0 1.5 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>3 1 3</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://brick_box_3x1x3/meshes/simple_box.dae</uri>
+              <scale>3 1 3</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://brick_box_3x1x3/materials/scripts</uri>
+              <uri>model://brick_box_3x1x3/materials/textures</uri>
+              <name>BrickBox/Diffuse</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+      </link>
+      <pose frame=''>3.05713 0.786495 0 0 -0 0</pose>
+    </model>
+    <model name='brick_box_3x1x3_1'>
+      <static>1</static>
+      <link name='chassis'>
+        <pose frame=''>0 0 1.5 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>3 1 3</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://brick_box_3x1x3/meshes/simple_box.dae</uri>
+              <scale>3 1 3</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://brick_box_3x1x3/materials/scripts</uri>
+              <uri>model://brick_box_3x1x3/materials/textures</uri>
+              <name>BrickBox/Diffuse</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+      </link>
+      <pose frame=''>2.6009 -1.84243 0 0 -0 0</pose>
+    </model>
+    <model name='brick_box_3x1x3_2'>
+      <static>1</static>
+      <link name='chassis'>
+        <pose frame=''>0 0 1.5 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>3 1 3</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://brick_box_3x1x3/meshes/simple_box.dae</uri>
+              <scale>3 1 3</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://brick_box_3x1x3/materials/scripts</uri>
+              <uri>model://brick_box_3x1x3/materials/textures</uri>
+              <name>BrickBox/Diffuse</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+      </link>
+      <pose frame=''>6.05865 2.90186 0 0 -0 0</pose>
+    </model>
+    <model name='brick_box_3x1x3_3'>
+      <static>1</static>
+      <link name='chassis'>
+        <pose frame=''>0 0 1.5 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>3 1 3</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://brick_box_3x1x3/meshes/simple_box.dae</uri>
+              <scale>3 1 3</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://brick_box_3x1x3/materials/scripts</uri>
+              <uri>model://brick_box_3x1x3/materials/textures</uri>
+              <name>BrickBox/Diffuse</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+      </link>
+      <pose frame=''>6.35131 0.309151 0 0 -0 0</pose>
+    </model>
+    <model name='brick_box_3x1x3_4'>
+      <static>1</static>
+      <link name='chassis'>
+        <pose frame=''>0 0 1.5 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>3 1 3</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://brick_box_3x1x3/meshes/simple_box.dae</uri>
+              <scale>3 1 3</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://brick_box_3x1x3/materials/scripts</uri>
+              <uri>model://brick_box_3x1x3/materials/textures</uri>
+              <name>BrickBox/Diffuse</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+      </link>
+      <pose frame=''>8.0122 -2.73256 0 0 -0 0</pose>
+    </model>
+  </world>
+</sdf>
