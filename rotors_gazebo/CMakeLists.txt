@@ -68,6 +68,14 @@ add_executable(hovering_example src/hovering_example.cpp)
 target_link_libraries(hovering_example ${catkin_LIBRARIES})
 add_dependencies(hovering_example ${catkin_EXPORTED_TARGETS})
 
+add_executable(hovering_example_eta_test src/hovering_example_eta_test.cpp)
+target_link_libraries(hovering_example_eta_test ${catkin_LIBRARIES})
+add_dependencies(hovering_example_eta_test ${catkin_EXPORTED_TARGETS})
+
+add_executable(monocular_camera_3d_ramp src/monocular_camera_3d_ramp.cpp)
+target_link_libraries(monocular_camera_3d_ramp ${catkin_LIBRARIES})
+add_dependencies(monocular_camera_3d_ramp ${catkin_EXPORTED_TARGETS})
+
 foreach(dir launch models resource worlds)
    install(DIRECTORY ${dir}/
       DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/${dir})
