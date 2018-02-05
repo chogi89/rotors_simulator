@@ -569,7 +569,7 @@
         <windGustStart>${wind_gust_start}</windGustStart> <!-- [s] -->
         <windGustForceMean>${wind_gust_force_mean}</windGustForceMean> <!-- [N] -->
         <windSpeedMean>${wind_speed_mean}</windSpeedMean> <!-- [m/s] -->
-        <useCustomStaticWindField>${use_custom_static_box wind_field}</useCustomStaticWindField>
+        <useCustomStaticWindField>${use_custom_static_wind_field}</useCustomStaticWindField>
         <customWindFieldPath>${custom_wind_field_path}</customWindFieldPath> <!-- from ~/.ros -->
       </plugin>
     </gazebo>
@@ -581,22 +581,20 @@
     params="namespace parent_link camera_suffix frame_rate *origin">
     <xacro:camera_macro
       namespace="${namespace}"
-      parent_link="${parent_link}/base_link"
-      camera_suffix="nadir"
-      frame_rate="20.0"
-      horizontal_fov="2"
+      parent_link="${parent_link}"
+      camera_suffix="${camera_suffix}"
+      frame_rate="${frame_rate}"
+      horizontal_fov="1.3962634"
       image_width="752"
       image_height="480"
       image_format="L8"
       min_distance="0.02"
-      max_distance="50"
+      max_distance="30"
       noise_mean="0.0"
       noise_stddev="0.007"
       enable_visual="true">
       <mesh filename="package://rotors_description/meshes/vi_camera.dae" scale="1 1 1" />
       <xacro:insert_block name="origin" />
-      <box size="0.05 0.05 0.05" />
-      <origin xyz="0 0 ${-arm_length/4}" rpy="0 ${pi/2} 0" />
     </xacro:camera_macro>
   </xacro:macro>
 
