@@ -29,14 +29,14 @@
 #include <trajectory_msgs/MultiDOFJointTrajectory.h>
 
 int main(int argc, char** argv) {
-  ros::init(argc, argv, "hovering_example");
+  ros::init(argc, argv, "monocular_camera_3d_ramp");
   ros::NodeHandle nh;
   // Create a private node handle for accessing node parameters.
   ros::NodeHandle nh_private("~");
   ros::Publisher trajectory_pub =
       nh.advertise<trajectory_msgs::MultiDOFJointTrajectory>(
           mav_msgs::default_topics::COMMAND_TRAJECTORY, 10);
-  ROS_INFO("Started hovering example.");
+  ROS_INFO("Started monocular_camera_3d_ramp.");
 
   std_srvs::Empty srv;
   bool unpaused = ros::service::call("/gazebo/unpause_physics", srv);
@@ -64,7 +64,7 @@ int main(int argc, char** argv) {
   trajectory_msg.header.stamp = ros::Time::now();
 
   // Default desired position and yaw.
-  Eigen::Vector3d desired_position(0.0, 4.5, 1.5);
+  Eigen::Vector3d desired_position(0.0, 0, 1.5);
   double desired_yaw = 0.0;
 
   // Overwrite defaults if set as node parameters.
