@@ -1,18 +1,8 @@
 <sdf version='1.6'>
   <world name='default'>
-    <light name='sun' type='directional'>
-      <cast_shadows>1</cast_shadows>
-      <pose frame=''>0 0 10 0 -0 0</pose>
-      <diffuse>0.8 0.8 0.8 1</diffuse>
-      <specular>0.2 0.2 0.2 1</specular>
-      <attenuation>
-        <range>1000</range>
-        <constant>0.9</constant>
-        <linear>0.01</linear>
-        <quadratic>0.001</quadratic>
-      </attenuation>
-      <direction>-0.5 0.1 -0.9</direction>
-    </light>
+    <include>
+      <uri>model://sun</uri>
+    </include>
 
     <plugin name='ros_interface_plugin' filename='librotors_gazebo_ros_interface_plugin.so'/>
 
@@ -99,10 +89,10 @@
       </link>
     </model>
     <state world_name='default'>
-      <sim_time>9009 120000000</sim_time>
-      <real_time>100 306298176</real_time>
-      <wall_time>1518534763 205356074</wall_time>
-      <iterations>9992</iterations>
+      <sim_time>8668 980000000</sim_time>
+      <real_time>218 482828203</real_time>
+      <wall_time>1517832913 988763157</wall_time>
+      <iterations>21818</iterations>
       <model name='asphalt_plane'>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -114,20 +104,30 @@
         </link>
       </model>
       <model name='brick_box_1x3x1'>
-        <pose frame=''>4 0 0.8 0 -0 0</pose>
+        <pose frame=''>4 0 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='chassis'>
-          <pose frame=''>4 0 1.3 0 -0 0</pose>
+          <pose frame=''>4 0 0.5 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='brick_box_1x3x1_0'>
-        <pose frame=''>3 0 0.4 0 -0 0</pose>
+        <pose frame=''>3 0 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='chassis'>
-          <pose frame=''>3 0 0.9 0 -0 0</pose>
+          <pose frame=''>3 0 0.5 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='brick_box_1x3x1_1'>
+        <pose frame=''>3 0 1 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='chassis'>
+          <pose frame=''>3 0 1.5 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -143,31 +143,21 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='brick_box_1x3x1_6'>
-        <pose frame=''>6 0 1.6 0 -0 0</pose>
+      <model name='brick_box_1x3x1_3'>
+        <pose frame=''>4 0 1 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='chassis'>
-          <pose frame=''>6 0 2.1 0 -0 0</pose>
+          <pose frame=''>4 0 1.5 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='brick_box_1x3x1_7'>
-        <pose frame=''>5 0 1.2 0 -0 0</pose>
+      <model name='brick_box_1x3x1_4'>
+        <pose frame=''>4 0 2 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='chassis'>
-          <pose frame=''>5 0 1.7 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='brick_box_1x3x1_8'>
-        <pose frame=''>7 0 2 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='chassis'>
-          <pose frame=''>7 0 2.5 0 -0 0</pose>
+          <pose frame=''>4 0 2.5 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -198,16 +188,6 @@
         <scale>1 1 1</scale>
         <link name='chassis'>
           <pose frame=''>0 -2 1.5 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='brick_box_3x1x3_10'>
-        <pose frame=''>6 2 3 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='chassis'>
-          <pose frame=''>6 2 4.5 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -263,36 +243,6 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='brick_box_3x1x3_7'>
-        <pose frame=''>6 -2 0 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='chassis'>
-          <pose frame=''>6 -2 1.5 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='brick_box_3x1x3_8'>
-        <pose frame=''>6 2 0 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='chassis'>
-          <pose frame=''>6 2 1.5 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='brick_box_3x1x3_9'>
-        <pose frame=''>6 -2 3 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='chassis'>
-          <pose frame=''>6 -2 4.5 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
       <model name='ground_plane'>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -303,13 +253,94 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <light name='sun'>
-        <pose frame=''>0 0 10 0 -0 0</pose>
+      <light name='sun10'>
+        <pose frame=''>3.5 -4.5 3 0 -0 0</pose>
+      </light>
+      <light name='sun11'>
+        <pose frame=''>-3.5 -4.5 3 0 -0 0</pose>
+      </light>
+      <light name='sun12'>
+        <pose frame=''>-5.5 -2.5 3 0 -0 0</pose>
+      </light>
+      <light name='sun13'>
+        <pose frame=''>-5.5 2.5 3 0 -0 0</pose>
+      </light>
+      <light name='sun14'>
+        <pose frame=''>-3.5 4.5 3 0 -0 0</pose>
+      </light>
+      <light name='sun15'>
+        <pose frame=''>3.5 4.5 3 0 -0 0</pose>
+      </light>
+      <light name='sun16'>
+        <pose frame=''>5.5 2.5 3 0 -0 0</pose>
+      </light>
+      <light name='sun17'>
+        <pose frame=''>9.5 0 3 0 -0 0</pose>
+      </light>
+      <light name='sun18'>
+        <pose frame=''>9.5 2.5 3 0 -0 0</pose>
+      </light>
+      <light name='sun19'>
+        <pose frame=''>9.5 -2.5 3 0 -0 0</pose>
+      </light>
+      <light name='sun20'>
+        <pose frame=''>9.5 4.5 3 0 -0 0</pose>
+      </light>
+      <light name='sun21'>
+        <pose frame=''>9.5 -4.5 3 0 -0 0</pose>
+      </light>
+      <light name='sun22'>
+        <pose frame=''>-9.5 0 3 0 -0 0</pose>
+      </light>
+      <light name='sun23'>
+        <pose frame=''>-9.5 2.5 3 0 -0 0</pose>
+      </light>
+      <light name='sun24'>
+        <pose frame=''>-9.5 -2.5 3 0 -0 0</pose>
+      </light>
+      <light name='sun25'>
+        <pose frame=''>-9.5 4.5 3 0 -0 0</pose>
+      </light>
+      <light name='sun26'>
+        <pose frame=''>-9.5 -4.5 3 0 -0 0</pose>
+      </light>
+      <light name='sun27'>
+        <pose frame=''>0 8.5 3 0 -0 0</pose>
+      </light>
+      <light name='sun28'>
+        <pose frame=''>3.5 8.5 3 0 -0 0</pose>
+      </light>
+      <light name='sun29'>
+        <pose frame=''>-3.5 8.5 3 0 -0 0</pose>
+      </light>
+      <light name='sun30'>
+        <pose frame=''>5.5 8.5 3 0 -0 0</pose>
+      </light>
+      <light name='sun31'>
+        <pose frame=''>-5.5 8.5 3 0 -0 0</pose>
+      </light>
+      <light name='sun32'>
+        <pose frame=''>0 -8.5 3 0 -0 0</pose>
+      </light>
+      <light name='sun33'>
+        <pose frame=''>3.5 -8.5 3 0 -0 0</pose>
+      </light>
+      <light name='sun34'>
+        <pose frame=''>-3.5 -8.5 3 0 -0 0</pose>
+      </light>
+      <light name='sun35'>
+        <pose frame=''>5.5 -8.5 3 0 -0 0</pose>
+      </light>
+      <light name='sun36'>
+        <pose frame=''>-5.5 -8.5 3 0 -0 0</pose>
+      </light>
+      <light name='sun9'>
+        <pose frame=''>5.5 -2.5 3 0 -0 0</pose>
       </light>
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose frame=''>-6.99889 -0.0887 11.3573 0 0.7578 0.00739</pose>
+        <pose frame=''>-12.6108 -2.46083 16.143 -0 0.773796 0.011374</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
@@ -453,6 +484,50 @@
       </link>
       <pose frame=''>2.83281 -0.067217 0 0 -0 0</pose>
     </model>
+    <model name='brick_box_1x3x1_1'>
+      <static>1</static>
+      <link name='chassis'>
+        <pose frame=''>0 0 0.5 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>1 3 1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://brick_box_1x3x1/meshes/simple_box.dae</uri>
+              <scale>1 3 1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://brick_box_1x3x1/materials/scripts</uri>
+              <uri>model://brick_box_1x3x1/materials/textures</uri>
+              <name>BrickBox/Diffuse</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+      </link>
+      <pose frame=''>2.34592 -0.158115 0 0 -0 0</pose>
+    </model>
     <model name='brick_box_1x3x1_2'>
       <static>1</static>
       <link name='chassis'>
@@ -496,6 +571,94 @@
         <kinematic>0</kinematic>
       </link>
       <pose frame=''>1.99013 0.154588 0 0 -0 0</pose>
+    </model>
+    <model name='brick_box_1x3x1_3'>
+      <static>1</static>
+      <link name='chassis'>
+        <pose frame=''>0 0 0.5 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>1 3 1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://brick_box_1x3x1/meshes/simple_box.dae</uri>
+              <scale>1 3 1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://brick_box_1x3x1/materials/scripts</uri>
+              <uri>model://brick_box_1x3x1/materials/textures</uri>
+              <name>BrickBox/Diffuse</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+      </link>
+      <pose frame=''>2.05702 -0.583396 0 0 -0 0</pose>
+    </model>
+    <model name='brick_box_1x3x1_4'>
+      <static>1</static>
+      <link name='chassis'>
+        <pose frame=''>0 0 0.5 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>1 3 1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://brick_box_1x3x1/meshes/simple_box.dae</uri>
+              <scale>1 3 1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://brick_box_1x3x1/materials/scripts</uri>
+              <uri>model://brick_box_1x3x1/materials/textures</uri>
+              <name>BrickBox/Diffuse</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+      </link>
+      <pose frame=''>2.07287 -1.49931 0 0 -0 0</pose>
     </model>
     <model name='brick_box_3x1x3'>
       <static>1</static>
@@ -848,314 +1011,6 @@
         <kinematic>0</kinematic>
       </link>
       <pose frame=''>0.750087 3.5049 0 0 -0 0</pose>
-    </model>
-    <model name='brick_box_3x1x3_7'>
-      <static>1</static>
-      <link name='chassis'>
-        <pose frame=''>0 0 1.5 0 -0 0</pose>
-        <collision name='collision'>
-          <geometry>
-            <box>
-              <size>3 1 3</size>
-            </box>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <mesh>
-              <uri>model://brick_box_3x1x3/meshes/simple_box.dae</uri>
-              <scale>3 1 3</scale>
-            </mesh>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://brick_box_3x1x3/materials/scripts</uri>
-              <uri>model://brick_box_3x1x3/materials/textures</uri>
-              <name>BrickBox/Diffuse</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-      </link>
-      <pose frame=''>6.07534 -2.10099 0 0 -0 0</pose>
-    </model>
-    <model name='brick_box_3x1x3_8'>
-      <static>1</static>
-      <link name='chassis'>
-        <pose frame=''>0 0 1.5 0 -0 0</pose>
-        <collision name='collision'>
-          <geometry>
-            <box>
-              <size>3 1 3</size>
-            </box>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <mesh>
-              <uri>model://brick_box_3x1x3/meshes/simple_box.dae</uri>
-              <scale>3 1 3</scale>
-            </mesh>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://brick_box_3x1x3/materials/scripts</uri>
-              <uri>model://brick_box_3x1x3/materials/textures</uri>
-              <name>BrickBox/Diffuse</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-      </link>
-      <pose frame=''>6.09147 1.90293 0 0 -0 0</pose>
-    </model>
-    <model name='brick_box_3x1x3_9'>
-      <static>1</static>
-      <link name='chassis'>
-        <pose frame=''>0 0 1.5 0 -0 0</pose>
-        <collision name='collision'>
-          <geometry>
-            <box>
-              <size>3 1 3</size>
-            </box>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <mesh>
-              <uri>model://brick_box_3x1x3/meshes/simple_box.dae</uri>
-              <scale>3 1 3</scale>
-            </mesh>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://brick_box_3x1x3/materials/scripts</uri>
-              <uri>model://brick_box_3x1x3/materials/textures</uri>
-              <name>BrickBox/Diffuse</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-      </link>
-      <pose frame=''>7.44647 -2.16465 0 0 -0 0</pose>
-    </model>
-    <model name='brick_box_3x1x3_10'>
-      <static>1</static>
-      <link name='chassis'>
-        <pose frame=''>0 0 1.5 0 -0 0</pose>
-        <collision name='collision'>
-          <geometry>
-            <box>
-              <size>3 1 3</size>
-            </box>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <mesh>
-              <uri>model://brick_box_3x1x3/meshes/simple_box.dae</uri>
-              <scale>3 1 3</scale>
-            </mesh>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://brick_box_3x1x3/materials/scripts</uri>
-              <uri>model://brick_box_3x1x3/materials/textures</uri>
-              <name>BrickBox/Diffuse</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-      </link>
-      <pose frame=''>8.06632 1.82369 0 0 -0 0</pose>
-    </model>
-    <model name='brick_box_1x3x1_6'>
-      <static>1</static>
-      <link name='chassis'>
-        <pose frame=''>0 0 0.5 0 -0 0</pose>
-        <collision name='collision'>
-          <geometry>
-            <box>
-              <size>1 3 1</size>
-            </box>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <mesh>
-              <uri>model://brick_box_1x3x1/meshes/simple_box.dae</uri>
-              <scale>1 3 1</scale>
-            </mesh>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://brick_box_1x3x1/materials/scripts</uri>
-              <uri>model://brick_box_1x3x1/materials/textures</uri>
-              <name>BrickBox/Diffuse</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-      </link>
-      <pose frame=''>5.7966 3.97722 0 0 -0 0</pose>
-    </model>
-    <model name='brick_box_1x3x1_7'>
-      <static>1</static>
-      <link name='chassis'>
-        <pose frame=''>0 0 0.5 0 -0 0</pose>
-        <collision name='collision'>
-          <geometry>
-            <box>
-              <size>1 3 1</size>
-            </box>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <mesh>
-              <uri>model://brick_box_1x3x1/meshes/simple_box.dae</uri>
-              <scale>1 3 1</scale>
-            </mesh>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://brick_box_1x3x1/materials/scripts</uri>
-              <uri>model://brick_box_1x3x1/materials/textures</uri>
-              <name>BrickBox/Diffuse</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-      </link>
-      <pose frame=''>4.65452 4.02812 0 0 -0 0</pose>
-    </model>
-    <model name='brick_box_1x3x1_8'>
-      <static>1</static>
-      <link name='chassis'>
-        <pose frame=''>0 0 0.5 0 -0 0</pose>
-        <collision name='collision'>
-          <geometry>
-            <box>
-              <size>1 3 1</size>
-            </box>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <mesh>
-              <uri>model://brick_box_1x3x1/meshes/simple_box.dae</uri>
-              <scale>1 3 1</scale>
-            </mesh>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://brick_box_1x3x1/materials/scripts</uri>
-              <uri>model://brick_box_1x3x1/materials/textures</uri>
-              <name>BrickBox/Diffuse</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-      </link>
-      <pose frame=''>6.92219 4.06095 0 0 -0 0</pose>
     </model>
   </world>
 </sdf>
