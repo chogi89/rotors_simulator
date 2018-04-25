@@ -1,20 +1,8 @@
 <sdf version='1.6'>
   <world name='default'>
-    <light name='sun' type='directional'>
-      <cast_shadows>1</cast_shadows>
-      <pose frame=''>0 0 10 0 -0 0</pose>
-      <diffuse>0.8 0.8 0.8 1</diffuse>
-      <specular>0.1 0.1 0.1 1</specular>
-      <attenuation>
-        <range>1000</range>
-        <constant>0.9</constant>
-        <linear>0.01</linear>
-        <quadratic>0.001</quadratic>
-      </attenuation>
-      <direction>-0.5 0.5 -1</direction>
-    </light>
-
-    <plugin name='ros_interface_plugin' filename='librotors_gazebo_ros_interface_plugin.so'/>
+    <include>
+      <uri>model://sun</uri>
+    </include>
 
     <physics name='default_physics' default='0' type='ode'>
       <ode>
@@ -99,10 +87,10 @@
       </link>
     </model>
     <state world_name='default'>
-      <sim_time>8197 100000000</sim_time>
-      <real_time>35 834874385</real_time>
-      <wall_time>1521871509 476662259</wall_time>
-      <iterations>3553</iterations>
+      <sim_time>8100 730000000</sim_time>
+      <real_time>108 839824726</real_time>
+      <wall_time>1517236246 667699725</wall_time>
+      <iterations>10851</iterations>
       <model name='asphalt_plane'>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -138,6 +126,16 @@
         <scale>1 1 1</scale>
         <link name='chassis'>
           <pose frame=''>2 -4.5 0.5 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='brick_box_1x3x1_2'>
+        <pose frame=''>-2.5 -4.5 1.5 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='chassis'>
+          <pose frame=''>-2.5 -4.5 2 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -264,7 +262,7 @@
         </link>
       </model>
       <model name='brick_box_3x1x3_18'>
-        <pose frame=''>-7.5 -1.5 0 0 -0 1.57008</pose>
+        <pose frame=''>-7.5 -1.5 -0 0 -0 1.57008</pose>
         <scale>1 1 1</scale>
         <link name='chassis'>
           <pose frame=''>-7.5 -1.5 1.5 0 -0 1.57008</pose>
@@ -363,16 +361,6 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='brick_box_3x1x3_27'>
-        <pose frame=''>-3.5 -4.5 0 0 -0 1.5708</pose>
-        <scale>1 1 1</scale>
-        <link name='chassis'>
-          <pose frame=''>-3.5 -4.5 1.5 0 -0 1.5708</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
       <model name='brick_box_3x1x3_3'>
         <pose frame=''>-3.5 -1.5 0 0 -0 1.5708</pose>
         <scale>1 1 1</scale>
@@ -453,13 +441,10 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <light name='sun'>
-        <pose frame=''>0 0 10 0 -0 0</pose>
-      </light>
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose frame=''>-0.615418 -4.52303 21.8744 0 1.42179 1.50737</pose>
+        <pose frame=''>2.61225 -23.6737 15.4 0 0.561796 1.79537</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
@@ -543,7 +528,7 @@
           <geometry>
             <mesh>
               <uri>model://brick_box_3x1x3/meshes/simple_box.dae</uri>
-              <scale>1 1 1</scale>
+              <scale>3 1 3</scale>
             </mesh>
           </geometry>
           <material>
@@ -556,7 +541,6 @@
         </visual>
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
-        <gravity>1</gravity>
       </link>
       <pose frame=''>-0.033373 0.784902 0 0 -0 0</pose>
     </model>
@@ -588,7 +572,7 @@
           <geometry>
             <mesh>
               <uri>model://brick_box_3x1x3/meshes/simple_box.dae</uri>
-              <scale>1 1 1</scale>
+              <scale>3 1 3</scale>
             </mesh>
           </geometry>
           <material>
@@ -601,7 +585,6 @@
         </visual>
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
-        <gravity>1</gravity>
       </link>
       <pose frame=''>3.50364 -1.47731 0 0 -0 0</pose>
     </model>
@@ -633,7 +616,7 @@
           <geometry>
             <mesh>
               <uri>model://brick_box_3x1x3/meshes/simple_box.dae</uri>
-              <scale>1 1 1</scale>
+              <scale>3 1 3</scale>
             </mesh>
           </geometry>
           <material>
@@ -646,7 +629,6 @@
         </visual>
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
-        <gravity>1</gravity>
       </link>
       <pose frame=''>1.93574 -2.5246 0 0 -0 0</pose>
     </model>
@@ -678,7 +660,7 @@
           <geometry>
             <mesh>
               <uri>model://brick_box_3x1x3/meshes/simple_box.dae</uri>
-              <scale>1 1 1</scale>
+              <scale>3 1 3</scale>
             </mesh>
           </geometry>
           <material>
@@ -691,7 +673,6 @@
         </visual>
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
-        <gravity>1</gravity>
       </link>
       <pose frame=''>-1.18163 -2.49886 0 0 -0 0</pose>
     </model>
@@ -723,7 +704,7 @@
           <geometry>
             <mesh>
               <uri>model://brick_box_3x1x3/meshes/simple_box.dae</uri>
-              <scale>1 1 1</scale>
+              <scale>3 1 3</scale>
             </mesh>
           </geometry>
           <material>
@@ -736,7 +717,6 @@
         </visual>
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
-        <gravity>1</gravity>
       </link>
       <pose frame=''>-2.65062 -1.57197 0 0 -0 0</pose>
     </model>
@@ -768,7 +748,7 @@
           <geometry>
             <mesh>
               <uri>model://brick_box_3x1x3/meshes/simple_box.dae</uri>
-              <scale>1 1 1</scale>
+              <scale>3 1 3</scale>
             </mesh>
           </geometry>
           <material>
@@ -781,7 +761,6 @@
         </visual>
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
-        <gravity>1</gravity>
       </link>
       <pose frame=''>-2.60288 1.54316 0 0 -0 0</pose>
     </model>
@@ -813,7 +792,7 @@
           <geometry>
             <mesh>
               <uri>model://brick_box_3x1x3/meshes/simple_box.dae</uri>
-              <scale>1 1 1</scale>
+              <scale>3 1 3</scale>
             </mesh>
           </geometry>
           <material>
@@ -826,7 +805,6 @@
         </visual>
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
-        <gravity>1</gravity>
       </link>
       <pose frame=''>-0.99503 2.80803 0 0 -0 0</pose>
     </model>
@@ -858,7 +836,7 @@
           <geometry>
             <mesh>
               <uri>model://brick_box_3x1x3/meshes/simple_box.dae</uri>
-              <scale>1 1 1</scale>
+              <scale>3 1 3</scale>
             </mesh>
           </geometry>
           <material>
@@ -871,7 +849,6 @@
         </visual>
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
-        <gravity>1</gravity>
       </link>
       <pose frame=''>1.81799 2.72467 0 0 -0 0</pose>
     </model>
@@ -903,7 +880,7 @@
           <geometry>
             <mesh>
               <uri>model://brick_box_3x1x3/meshes/simple_box.dae</uri>
-              <scale>1 1 1</scale>
+              <scale>3 1 3</scale>
             </mesh>
           </geometry>
           <material>
@@ -916,7 +893,6 @@
         </visual>
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
-        <gravity>1</gravity>
       </link>
       <pose frame=''>2.55632 6.76654 0 0 -0 0</pose>
     </model>
@@ -948,7 +924,7 @@
           <geometry>
             <mesh>
               <uri>model://brick_box_3x1x3/meshes/simple_box.dae</uri>
-              <scale>1 1 1</scale>
+              <scale>3 1 3</scale>
             </mesh>
           </geometry>
           <material>
@@ -961,7 +937,6 @@
         </visual>
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
-        <gravity>1</gravity>
       </link>
       <pose frame=''>7.1311 -2.03506 0 0 -0 0</pose>
     </model>
@@ -993,7 +968,7 @@
           <geometry>
             <mesh>
               <uri>model://brick_box_3x1x3/meshes/simple_box.dae</uri>
-              <scale>1 1 1</scale>
+              <scale>3 1 3</scale>
             </mesh>
           </geometry>
           <material>
@@ -1006,7 +981,6 @@
         </visual>
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
-        <gravity>1</gravity>
       </link>
       <pose frame=''>7.2369 -4.56691 0 0 -0 0</pose>
     </model>
@@ -1038,7 +1012,7 @@
           <geometry>
             <mesh>
               <uri>model://brick_box_3x1x3/meshes/simple_box.dae</uri>
-              <scale>1 1 1</scale>
+              <scale>3 1 3</scale>
             </mesh>
           </geometry>
           <material>
@@ -1051,7 +1025,6 @@
         </visual>
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
-        <gravity>1</gravity>
       </link>
       <pose frame=''>7.54378 -7.25808 0 0 -0 0</pose>
     </model>
@@ -1083,7 +1056,7 @@
           <geometry>
             <mesh>
               <uri>model://brick_box_3x1x3/meshes/simple_box.dae</uri>
-              <scale>1 1 1</scale>
+              <scale>3 1 3</scale>
             </mesh>
           </geometry>
           <material>
@@ -1096,7 +1069,6 @@
         </visual>
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
-        <gravity>1</gravity>
       </link>
       <pose frame=''>5.39833 -5.9254 0 0 -0 0</pose>
     </model>
@@ -1128,7 +1100,7 @@
           <geometry>
             <mesh>
               <uri>model://brick_box_3x1x3/meshes/simple_box.dae</uri>
-              <scale>1 1 1</scale>
+              <scale>3 1 3</scale>
             </mesh>
           </geometry>
           <material>
@@ -1141,7 +1113,6 @@
         </visual>
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
-        <gravity>1</gravity>
       </link>
       <pose frame=''>2.47887 -6.47052 0 0 -0 0</pose>
     </model>
@@ -1173,7 +1144,7 @@
           <geometry>
             <mesh>
               <uri>model://brick_box_3x1x3/meshes/simple_box.dae</uri>
-              <scale>1 1 1</scale>
+              <scale>3 1 3</scale>
             </mesh>
           </geometry>
           <material>
@@ -1186,7 +1157,6 @@
         </visual>
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
-        <gravity>1</gravity>
       </link>
       <pose frame=''>-0.54128 -6.45448 0 0 -0 0</pose>
     </model>
@@ -1218,7 +1188,7 @@
           <geometry>
             <mesh>
               <uri>model://brick_box_3x1x3/meshes/simple_box.dae</uri>
-              <scale>1 1 1</scale>
+              <scale>3 1 3</scale>
             </mesh>
           </geometry>
           <material>
@@ -1231,7 +1201,6 @@
         </visual>
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
-        <gravity>1</gravity>
       </link>
       <pose frame=''>-1.48573 -6.50289 0 0 -0 0</pose>
     </model>
@@ -1263,7 +1232,7 @@
           <geometry>
             <mesh>
               <uri>model://brick_box_3x1x3/meshes/simple_box.dae</uri>
-              <scale>1 1 1</scale>
+              <scale>3 1 3</scale>
             </mesh>
           </geometry>
           <material>
@@ -1276,7 +1245,6 @@
         </visual>
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
-        <gravity>1</gravity>
       </link>
       <pose frame=''>-4.50779 -6.51703 0 0 -0 0</pose>
     </model>
@@ -1308,7 +1276,7 @@
           <geometry>
             <mesh>
               <uri>model://brick_box_3x1x3/meshes/simple_box.dae</uri>
-              <scale>1 1 1</scale>
+              <scale>3 1 3</scale>
             </mesh>
           </geometry>
           <material>
@@ -1321,7 +1289,6 @@
         </visual>
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
-        <gravity>1</gravity>
       </link>
       <pose frame=''>-7.48557 -6.54746 0 0 -0 0</pose>
     </model>
@@ -1353,7 +1320,7 @@
           <geometry>
             <mesh>
               <uri>model://brick_box_3x1x3/meshes/simple_box.dae</uri>
-              <scale>1 1 1</scale>
+              <scale>3 1 3</scale>
             </mesh>
           </geometry>
           <material>
@@ -1366,7 +1333,6 @@
         </visual>
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
-        <gravity>1</gravity>
       </link>
       <pose frame=''>-7.52234 -5.32794 0 0 -0 0</pose>
     </model>
@@ -1398,7 +1364,7 @@
           <geometry>
             <mesh>
               <uri>model://brick_box_3x1x3/meshes/simple_box.dae</uri>
-              <scale>1 1 1</scale>
+              <scale>3 1 3</scale>
             </mesh>
           </geometry>
           <material>
@@ -1411,7 +1377,6 @@
         </visual>
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
-        <gravity>1</gravity>
       </link>
       <pose frame=''>-8.30381 -3.76953 0 0 -0 0</pose>
     </model>
@@ -1443,7 +1408,7 @@
           <geometry>
             <mesh>
               <uri>model://brick_box_3x1x3/meshes/simple_box.dae</uri>
-              <scale>1 1 1</scale>
+              <scale>3 1 3</scale>
             </mesh>
           </geometry>
           <material>
@@ -1456,7 +1421,6 @@
         </visual>
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
-        <gravity>1</gravity>
       </link>
       <pose frame=''>-7.89567 -1.93848 0 0 -0 0</pose>
     </model>
@@ -1488,7 +1452,7 @@
           <geometry>
             <mesh>
               <uri>model://brick_box_3x1x3/meshes/simple_box.dae</uri>
-              <scale>1 1 1</scale>
+              <scale>3 1 3</scale>
             </mesh>
           </geometry>
           <material>
@@ -1501,7 +1465,6 @@
         </visual>
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
-        <gravity>1</gravity>
       </link>
       <pose frame=''>-7.79744 2.02581 0 0 -0 0</pose>
     </model>
@@ -1533,7 +1496,7 @@
           <geometry>
             <mesh>
               <uri>model://brick_box_3x1x3/meshes/simple_box.dae</uri>
-              <scale>1 1 1</scale>
+              <scale>3 1 3</scale>
             </mesh>
           </geometry>
           <material>
@@ -1546,7 +1509,6 @@
         </visual>
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
-        <gravity>1</gravity>
       </link>
       <pose frame=''>-7.85267 5.19046 0 0 -0 0</pose>
     </model>
@@ -1578,7 +1540,7 @@
           <geometry>
             <mesh>
               <uri>model://brick_box_3x1x3/meshes/simple_box.dae</uri>
-              <scale>1 1 1</scale>
+              <scale>3 1 3</scale>
             </mesh>
           </geometry>
           <material>
@@ -1591,7 +1553,6 @@
         </visual>
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
-        <gravity>1</gravity>
       </link>
       <pose frame=''>-7.94127 9.06625 0 0 -0 0</pose>
     </model>
@@ -1623,7 +1584,7 @@
           <geometry>
             <mesh>
               <uri>model://brick_box_3x1x3/meshes/simple_box.dae</uri>
-              <scale>1 1 1</scale>
+              <scale>3 1 3</scale>
             </mesh>
           </geometry>
           <material>
@@ -1636,7 +1597,6 @@
         </visual>
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
-        <gravity>1</gravity>
       </link>
       <pose frame=''>-1.45484 6.55806 0 0 -0 0</pose>
     </model>
@@ -1668,7 +1628,7 @@
           <geometry>
             <mesh>
               <uri>model://brick_box_3x1x3/meshes/simple_box.dae</uri>
-              <scale>1 1 1</scale>
+              <scale>3 1 3</scale>
             </mesh>
           </geometry>
           <material>
@@ -1681,7 +1641,6 @@
         </visual>
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
-        <gravity>1</gravity>
       </link>
       <pose frame=''>1.31313 6.58705 0 0 -0 0</pose>
     </model>
@@ -1713,7 +1672,7 @@
           <geometry>
             <mesh>
               <uri>model://brick_box_3x1x3/meshes/simple_box.dae</uri>
-              <scale>1 1 1</scale>
+              <scale>3 1 3</scale>
             </mesh>
           </geometry>
           <material>
@@ -1726,7 +1685,6 @@
         </visual>
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
-        <gravity>1</gravity>
       </link>
       <pose frame=''>4.46067 6.53855 0 0 -0 0</pose>
     </model>
@@ -1758,7 +1716,7 @@
           <geometry>
             <mesh>
               <uri>model://brick_box_3x1x3/meshes/simple_box.dae</uri>
-              <scale>1 1 1</scale>
+              <scale>3 1 3</scale>
             </mesh>
           </geometry>
           <material>
@@ -1771,7 +1729,6 @@
         </visual>
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
-        <gravity>1</gravity>
       </link>
       <pose frame=''>7.32863 6.883 0 0 -0 0</pose>
     </model>
@@ -1803,7 +1760,7 @@
           <geometry>
             <mesh>
               <uri>model://brick_box_1x3x1/meshes/simple_box.dae</uri>
-              <scale>1 1 1</scale>
+              <scale>1 3 1</scale>
             </mesh>
           </geometry>
           <material>
@@ -1816,7 +1773,6 @@
         </visual>
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
-        <gravity>1</gravity>
       </link>
       <pose frame=''>1.086 4.85224 0 0 -0 0</pose>
     </model>
@@ -1848,7 +1804,7 @@
           <geometry>
             <mesh>
               <uri>model://brick_box_1x3x1/meshes/simple_box.dae</uri>
-              <scale>1 1 1</scale>
+              <scale>1 3 1</scale>
             </mesh>
           </geometry>
           <material>
@@ -1861,7 +1817,6 @@
         </visual>
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
-        <gravity>1</gravity>
       </link>
       <pose frame=''>5.43719 -0.715682 0 0 -0 0</pose>
     </model>
@@ -1893,7 +1848,7 @@
           <geometry>
             <mesh>
               <uri>model://brick_box_1x3x1/meshes/simple_box.dae</uri>
-              <scale>1 1 1</scale>
+              <scale>1 3 1</scale>
             </mesh>
           </geometry>
           <material>
@@ -1906,9 +1861,52 @@
         </visual>
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
-        <gravity>1</gravity>
       </link>
       <pose frame=''>3.34514 -4.7172 0 0 -0 0</pose>
+    </model>
+    <model name='brick_box_1x3x1_2'>
+      <static>1</static>
+      <link name='chassis'>
+        <pose frame=''>0 0 0.5 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>1 3 1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://brick_box_1x3x1/meshes/simple_box.dae</uri>
+              <scale>1 3 1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://brick_box_1x3x1/materials/scripts</uri>
+              <uri>model://brick_box_1x3x1/materials/textures</uri>
+              <name>BrickBox/Diffuse</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+      </link>
+      <pose frame=''>-2.64972 -4.7744 0 0 -0 0</pose>
     </model>
     <model name='brick_box_1x3x1_3'>
       <static>1</static>
@@ -1938,7 +1936,7 @@
           <geometry>
             <mesh>
               <uri>model://brick_box_1x3x1/meshes/simple_box.dae</uri>
-              <scale>1 1 1</scale>
+              <scale>1 3 1</scale>
             </mesh>
           </geometry>
           <material>
@@ -1951,54 +1949,8 @@
         </visual>
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
-        <gravity>1</gravity>
       </link>
       <pose frame=''>-5.4707 0.055872 0 0 -0 0</pose>
-    </model>
-    <model name='brick_box_3x1x3_27'>
-      <static>1</static>
-      <link name='chassis'>
-        <pose frame=''>0 0 1.5 0 -0 0</pose>
-        <collision name='collision'>
-          <geometry>
-            <box>
-              <size>1 1 1</size>
-            </box>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <mesh>
-              <uri>model://brick_box_3x1x3/meshes/simple_box.dae</uri>
-              <scale>1 1 1</scale>
-            </mesh>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://brick_box_3x1x3/materials/scripts</uri>
-              <uri>model://brick_box_3x1x3/materials/textures</uri>
-              <name>BrickBox/Diffuse</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>1</gravity>
-      </link>
-      <pose frame=''>-3.70901 -4.50521 0 0 -0 0</pose>
     </model>
   </world>
 </sdf>
