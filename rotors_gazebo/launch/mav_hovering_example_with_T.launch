@@ -15,7 +15,7 @@
   </include>
 
   <group ns="$(arg mav_name)">
-    <include file="$(find rotors_gazebo)/launch/spawn_mav_ramp.launch">
+    <include file="$(find rotors_gazebo)/launch/spawn_mav_01.launch">
       <arg name="mav_name" value="$(arg mav_name)" />
       <arg name="model" value="$(find rotors_description)/urdf/mav_with_monocular_camera_3d.gazebo" />
       <arg name="enable_logging" value="$(arg enable_logging)" />
@@ -27,7 +27,7 @@
       <rosparam command="load" file="$(find rotors_gazebo)/resource/$(arg mav_name).yaml" />
       <remap from="odometry" to="odometry_sensor1/odometry" />
     </node>
-    <node name="monocular_camera_3d_ramp" pkg="rotors_gazebo" type="monocular_camera_3d_ramp" output="screen"/>
+    <node name="hovering_example01" pkg="rotors_gazebo" type="hovering_example01" output="screen"/>
     <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
     <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
   </group>

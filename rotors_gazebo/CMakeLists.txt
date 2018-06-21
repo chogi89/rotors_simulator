@@ -68,6 +68,14 @@ add_executable(hovering_example src/hovering_example.cpp)
 target_link_libraries(hovering_example ${catkin_LIBRARIES})
 add_dependencies(hovering_example ${catkin_EXPORTED_TARGETS})
 
+add_executable(hovering_example01 src/hovering_example01.cpp)
+target_link_libraries(hovering_example01 ${catkin_LIBRARIES})
+add_dependencies(hovering_example01 ${catkin_EXPORTED_TARGETS})
+
+add_executable(hovering_example02 src/hovering_example02.cpp)
+target_link_libraries(hovering_example02 ${catkin_LIBRARIES})
+add_dependencies(hovering_example02 ${catkin_EXPORTED_TARGETS})
+
 add_executable(hovering_example_eta_test src/hovering_example_eta_test.cpp)
 target_link_libraries(hovering_example_eta_test ${catkin_LIBRARIES})
 add_dependencies(hovering_example_eta_test ${catkin_EXPORTED_TARGETS})
